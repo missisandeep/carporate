@@ -11,7 +11,7 @@
 <html>
 <!-- Head -->
 <head>
-	<title>Incorporated a Corporate Category Flat Bootstrap Responsive Website Template | Home :: W3layouts</title>
+	<title>VD World.</title>
 	<!-- Meta-Tags -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -24,10 +24,10 @@
 		<!-- PopUp-Box-CSS -->	<link rel="stylesheet" href="css/chocolat.css" 		type="text/css" media="all">
 	<!-- //Custom-Stylesheet-Links -->
 	<!-- Fonts -->
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700"		type="text/css" media="all">
+		<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700"		type="text/css" media="all">
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700" 				type="text/css" media="all">
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" 	type="text/css" media="all">
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700,800"		type="text/css" media="all">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700,800"		type="text/css" media="all"> -->
 	<!-- //Fonts -->
 </head>
 <!-- //Head -->
@@ -43,8 +43,8 @@
 	<div class="header" id="home">
 
 		<!-- Navigation -->
-		<div class="navigation">
-			<nav class="navbar navbar-inverse navbar-default">
+		<div class="navigation" >
+			<nav class="navbar navbar-inverse navbar-default" id="myHeader">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -57,11 +57,12 @@
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#agileabout">ABOUT</a></li>
-							<li><a href="#w3layoutsexplore">EXPLORE</a></li>
+							<li><a href="#">HOME</a></li>
+							<li><a href="#agileabout">ABOUT US</a></li>
 							<li><a href="#agitsworkw3ls">WORK</a></li>
+							<li><a href="#w3layoutsexplore">EXPLORE</a></li>
 							<li><a href="#portfolio">PORTFOLIO</a></li>
-							<li><a href="#agiilecontactw3layouts">CONTACT</a></li>
+							<li><a href="#agiilecontactw3layouts">REACH US</a></li>
 						</ul>
 					</div>
 				</div>
@@ -72,10 +73,10 @@
 
 
 		<!-- Slider -->
-		<div class="slider w3layouts agileits">
+		<div class="slider w3layouts agileits header-slider">
 			<ul class="rslides w3layouts agileits" id="slider">
 				<li>
-					<img src="images/slide-1.jpg" alt="W3layouts Agileits">
+					<img src="images/slide-4.jpg" alt="W3layouts Agileits">
 						<div class="layer w3layouts agileits"></div>
 				</li>
 				<li>
@@ -86,10 +87,7 @@
 					<img src="images/slide-3.jpg" alt="W3layouts Agileits">
 						<div class="layer w3layouts agileits"></div>
 				</li>
-				<li>
-					<img src="images/slide-4.jpg" alt="W3layouts Agileits">
-						<div class="layer w3layouts agileits"></div>
-				</li>
+				
 				<li>
 					<img src="images/slide-5.jpg" alt="W3layouts Agileits">
 						<div class="layer w3layouts agileits"></div>
@@ -609,6 +607,24 @@
 							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 						});
 					});
+
+					// When the user scrolls the page, execute myFunction 
+			window.onscroll = function() {myFunction()};
+
+			// Get the header
+			var header = document.getElementById("myHeader");
+
+			// Get the offset position of the navbar
+			var sticky = header.offsetTop;
+
+			// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function myFunction() {
+			  if (window.pageYOffset > sticky) {
+			    header.classList.add("sticky");
+			  } else {
+			    header.classList.remove("sticky");
+			  }
+			}
 			</script>
 		<!-- //Smooth-Scrolling-JavaScript -->
 
